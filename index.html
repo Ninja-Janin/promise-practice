@@ -1,0 +1,18 @@
+<html>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+
+    var test = $.ajax({url: "data.json", success: function(result){
+        $("#div1").html(result);
+    }});
+
+	var myJSON = JSON.stringify(test);
+
+	console.log(test);
+
+	var promise = new Promise(function(){});
+</script>
+<div class="div1">
+	This is div One.
+</div>
+</html>
